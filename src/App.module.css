@@ -1,0 +1,61 @@
+.container {
+  padding: 20px;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.itemList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.item:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.total {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: #333;
+    color: white;
+  }
+
+  .item {
+    border-color: #555;
+  }
+
+  .item:hover {
+    background-color: #444;
+  }
+
+  .total {
+    color: #ddd;
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
